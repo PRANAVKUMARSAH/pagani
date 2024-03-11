@@ -1,1 +1,0 @@
-chrome-extension://gekdekpbfehejjiecgonmgmepbdnaggp/assets/js/library/adguard/adguard-content.js
