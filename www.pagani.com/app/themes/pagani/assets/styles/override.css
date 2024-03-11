@@ -1,0 +1,14 @@
+.press-twocol .press-row a.image {
+    position: relative;
+    overflow: hidden;
+    height: 250px;
+}
+
+.press-twocol .press-row a.image img {
+    width: 120%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    object-fit: cover;
+}

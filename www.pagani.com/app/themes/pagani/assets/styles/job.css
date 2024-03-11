@@ -1,0 +1,327 @@
+body.page-template-job-positions .area_filter {
+    position: relative
+}
+
+body.page-template-job-positions .section-job-in {
+    padding-left: 0;
+    padding-right: 0
+}
+
+body.page-template-job-positions .section-job-in .section-job-wrapper {
+    color: #000;
+    padding: 60px 27px 20px
+}
+
+@media only screen and (min-width: 1025px) {
+    body.page-template-job-positions .section-job-in .section-job-wrapper {
+        padding: 60px 120px 100px
+    }
+}
+
+body.page-template-job-positions .job_incipit_container {
+    text-align: center;
+    margin: 20px 0
+}
+
+body.page-template-job-positions .job_incipit_container .job_incipit {
+    font-size: 22px;
+    text-transform: uppercase;
+    letter-spacing: .1em;
+    line-height: 22px;
+    font-weight: 600
+}
+
+body.page-template-job-positions .job_type_container {
+    display: flex;
+    flex-wrap: wrap
+}
+
+@media(min-width: 768px) {
+    body.page-template-job-positions .job_type_container {
+        flex-wrap: inherit;
+        justify-content: center;
+        overflow: auto
+    }
+}
+
+body.page-template-job-positions .job_type_container .type_selector {
+    font-size: 3.5vw;
+    letter-spacing: .1em;
+    line-height: 4vw;
+    text-transform: uppercase;
+    color: #999;
+    position: relative;
+    text-align: center;
+    font-weight: 600;
+    flex: 50%;
+    max-width: 50%;
+    padding: 15px 0
+}
+
+@media(min-width: 768px) {
+    body.page-template-job-positions .job_type_container .type_selector {
+        flex: none;
+        font-size: 13px;
+        line-height: 16px;
+        width: auto;
+        font-size: 15px;
+        margin: 20px 40px
+    }
+}
+
+body.page-template-job-positions .job_type_container .type_selector:after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 1px;
+    bottom: 10px;
+    background-color: #999;
+    opacity: 0;
+    width: 100%
+}
+
+body.page-template-job-positions .job_type_container .type_selector.active {
+    pointer-events: none;
+    background: #ebebeb
+}
+
+@media(min-width: 768px) {
+    body.page-template-job-positions .job_type_container .type_selector.active {
+        background: none
+    }
+    body.page-template-job-positions .job_type_container .type_selector.active:after {
+        opacity: 1
+    }
+}
+
+body.page-template-job-positions .job_role_container {
+    margin: 20px 0;
+    padding: 10px 0;
+    border-top: 1px solid #999;
+    border-bottom: 1px solid #999;
+    position: relative
+}
+
+@media(min-width: 768px) {
+    body.page-template-job-positions .job_role_container {
+        text-align: left;
+        overflow: auto
+    }
+}
+
+body.page-template-job-positions .job_role_container .role_text {
+    font-size: 2.8vw;
+    line-height: 3.2vw;
+    font-weight: bold;
+    margin: 20px 10px;
+    line-height: 14px;
+    letter-spacing: .08em;
+    display: inline-block;
+    width: 40%
+}
+
+@media(min-width: 768px) {
+    body.page-template-job-positions .job_role_container .role_text {
+        width: auto;
+        font-size: 13px;
+        line-height: 14px
+    }
+}
+
+body.page-template-job-positions .job_role_container .job_role_container_filters {
+    display: none;
+    z-index: 10
+}
+
+body.page-template-job-positions .job_role_container .role_selector {
+    margin: 20px 10px;
+    text-transform: uppercase;
+    font-size: 2.8vw;
+    line-height: 3.2vw;
+    letter-spacing: .08em;
+    color: #999;
+    font-weight: bold;
+    text-align: left
+}
+
+@media(min-width: 768px) {
+    body.page-template-job-positions .job_role_container .role_selector {
+        font-size: 13px;
+        line-height: 14px;
+        text-align: center
+    }
+}
+
+body.page-template-job-positions .job_role_container .role_selector.active {
+    pointer-events: none;
+    display: block;
+    color: #000
+}
+
+@media(min-width: 768px) {
+    body.page-template-job-positions .job_role_container .role_selector.active {
+        display: inline-block
+    }
+}
+
+body.page-template-job-positions .job_role_container .role_selector.hide {
+    display: none
+}
+
+body.page-template-job-positions .job_role_container .role_selector.show {
+    display: block
+}
+
+@media(min-width: 768px) {
+    body.page-template-job-positions .job_role_container .role_selector.show {
+        display: inline-block
+    }
+}
+
+body.page-template-job-positions .job_role_container .mobile_selected_filter {
+    display: inline-block;
+    font-size: 2.8vw;
+    line-height: 3.2vw;
+    font-weight: bold;
+    margin: 20px 10px;
+    line-height: 14px;
+    letter-spacing: .08em;
+    text-transform: uppercase
+}
+
+@media(min-width: 768px) {
+    body.page-template-job-positions .job_role_container .mobile_selected_filter {
+        display: none
+    }
+}
+
+body.page-template-job-positions .job_role_container .mobile_selected_filter i.arrow_filer {
+    border: solid #000;
+    border-width: 0 2px 2px 0;
+    display: inline-block;
+    padding: 2px;
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    position: relative;
+    top: -1px;
+    transition: .2s transform ease-in;
+    z-index: 0
+}
+
+body.page-template-job-positions .job_role_container .mobile_selected_filter.open+.job_role_container_filters {
+    display: inline-block
+}
+
+body.page-template-job-positions .job_role_container .mobile_selected_filter.open i.arrow_filer {
+    transform: rotate(-135deg);
+    -webkit-transform: rotate(-135deg)
+}
+
+body.page-template-job-positions .job_role_container .job_role_container_filters {
+    display: none;
+    opacity: 1;
+    transition: .2s opacity ease-in
+}
+
+@media(min-width: 768px) {
+    body.page-template-job-positions .job_role_container .job_role_container_filters {
+        display: block
+    }
+}
+
+@media(max-width: 767px) {
+    body.page-template-job-positions .job_role_container .job_role_container_filters {
+        position: absolute;
+        background: #fff;
+        width: 50vw;
+        top: calc(100% - 20px);
+        left: calc(50% + 80px);
+        transform: translatex(-50%);
+        box-shadow: 1px 1px 4px #000;
+        max-height: 200px;
+        overflow: auto
+    }
+}
+
+body.page-template-job-positions .job_posts_container {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 100px
+}
+
+body.page-template-job-positions .job_posts_container .single_position {
+    display: none;
+    margin: 30px 10px;
+    flex: 100%
+}
+
+@media(min-width: 768px) {
+    body.page-template-job-positions .job_posts_container .single_position {
+        flex: 47%;
+        max-width: 47%
+    }
+}
+
+body.page-template-job-positions .job_posts_container .single_position.active {
+    display: block
+}
+
+body.page-template-job-positions .job_posts_container .single_position .post_title {
+    font-size: 15px;
+    font-weight: bold;
+    line-height: 22px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: .08em;
+    max-width: 600px
+}
+
+@media(min-width: 768px) {
+    body.page-template-job-positions .job_posts_container .single_position .post_title {
+        font-size: 13px;
+        line-height: 14px
+    }
+}
+
+body.page-template-job-positions .job_posts_container .single_position .post_content {
+    font-size: 15px;
+    line-height: 22px;
+    letter-spacing: .08em;
+    max-width: 600px
+}
+
+@media(min-width: 768px) {
+    body.page-template-job-positions .job_posts_container .single_position .post_content {
+        font-size: 13px;
+        line-height: 18px
+    }
+}
+
+body.page-template-job-positions .cta_candidatura_container {
+    display: flex;
+    margin: 20px 0;
+    justify-content: center
+}
+
+body.page-template-job-positions .cta_candidatura_container.bottom_fix {
+    position: fixed;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 0
+}
+
+body.page-template-job-positions .cta_candidatura_container .cta_container a {
+    padding: 20px 10px;
+    text-align: center;
+    display: inline-block;
+    background: #000;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 13px;
+    line-height: 14px;
+    letter-spacing: .08em;
+    min-width: 250px
+}
+
+/*# sourceMappingURL=job.css.map */

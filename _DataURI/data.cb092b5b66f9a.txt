@@ -1,0 +1,1 @@
+chrome-extension://gekdekpbfehejjiecgonmgmepbdnaggp/assets/img/icon/svg/close-cross.svg

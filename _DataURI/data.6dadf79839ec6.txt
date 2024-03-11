@@ -1,0 +1,1 @@
+chrome-extension://gekdekpbfehejjiecgonmgmepbdnaggp/app/serve_injectable_content/serve_injectable_content.min.js
